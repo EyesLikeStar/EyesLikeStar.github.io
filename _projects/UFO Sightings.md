@@ -1,8 +1,8 @@
 ---
 name: Bigfoot Sightings Visualization
 tools: [Python, HTML, vega-lite, altair]
-image: assets/pngs/cars.png
-description: This is a "showcase" project that uses vega-lite for interactive viz!
+image: python_notebooks\屏幕截图 2025-04-09 032819.png
+description: These two charts show the number of UFOs and the distribution of the top 15+ UFOs in each state across the U.S. from 1950 to 2023.
 custom_js:
   - vega.min
   - vega-lite.min
