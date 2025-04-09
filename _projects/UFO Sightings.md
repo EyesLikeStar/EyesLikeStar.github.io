@@ -18,7 +18,7 @@ These two charts show the number of UFOs and the distribution of the top 15+ UFO
 ---
 ### UFO Sightings Map
 
-<iframe src="python_notebooks\ufo_sightings.html" width="100%" height="600" style="border:none;"></iframe>
+<iframe src="python_notebooks/ufo_sightings.html" width="100%" height="600" style="border:none;"></iframe>
 
 **Visualization Description:**
 This scatter plot maps UFO sightings across the United States, visualizing each reported sighting as a dot positioned by latitude and longitude. The map highlights patterns of sightings geographically, clearly illustrating higher densities in specific regions, notably along the coasts and populated areas.
@@ -32,7 +32,7 @@ Data was filtered to include sightings only within valid U.S. locations, standar
 
 ### UFO Shapes Distribution Bar Chart
 
-<iframe src="python_notebooks\ufo_sightings_distribution.html" width="100%" height="600" style="border:none;"></iframe>
+<iframe src="python_notebooks/ufo_sightings_distribution.html" width="100%" height="600" style="border:none;"></iframe>
 
 **Visualization Description:**
 This horizontal bar chart depicts the frequency of reported UFO shapes for a user-selected state (e.g., Oregon), clearly emphasizing the most commonly sighted shapes. It simplifies comparisons among shape categories and clearly identifies "Light" as the most frequent type of sighting.
