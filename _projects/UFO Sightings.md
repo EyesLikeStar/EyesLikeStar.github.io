@@ -47,5 +47,5 @@ UFO shapes were grouped into the top 15 most common categories, with less common
 **Interactivity:**
 The bar chart incorporates a dropdown selection allowing users to choose a specific state and dynamically update the shape distribution. This state-based filtering highlights regional differences clearly, making the visualization more interesting and enabling focused analysis tailored to the user's curiosity or specific investigative questions.
 
-- csv link（https://github.com/UIUC-iSchool-DataViz/is445_data/raw/main/ufo-scrubbed-geocoded-time-standardized-00.csv）
-- Github Notebook（https://github.com/EyesLikeStar/EyesLikeStar.github.io/blob/main/python_notebooks/HW5.ipynb）
+- [csv link](https://github.com/UIUC-iSchool-DataViz/is445_data/raw/main/ufo-scrubbed-geocoded-time-standardized-00.csv)
+- [Github Notebook](https://github.com/EyesLikeStar/EyesLikeStar.github.io/blob/main/python_notebooks/HW5.ipynb)
