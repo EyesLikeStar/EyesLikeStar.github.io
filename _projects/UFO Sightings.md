@@ -1,6 +1,6 @@
 ---
-name: Vega Lite Example Project
-tools: [Python, HTML, vega-lite]
+name: Bigfoot Sightings Visualization
+tools: [Python, HTML, vega-lite, altair]
 image: assets/pngs/cars.png
 description: This is a "showcase" project that uses vega-lite for interactive viz!
 custom_js:
@@ -11,42 +11,40 @@ custom_js:
 ---
 
 
-# Example including vega-lite
-
-Example comes from this [great blog post right here](https://blog.4dcu.be/programming/2021/05/03/Interactive-Visualizations.html) that was also used in [our test import script](https://github.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2022/blob/main/week01/test_imports_week01.ipynb).
-
-We can use a vegachart HTML tag like so:
-
-```
-<vegachart schema-url="{{ site.baseurl }}/assets/json/cars.json" style="width: 100%"></vegachart>
-```
-
-<vegachart schema-url="{{ site.baseurl }}/assets/json/cars.json" style="width: 100%"></vegachart>
-
-In theory, you can also use [Jekyll hooks](https://jekyllrb.com/docs/plugins/hooks/) to do it, but I haven't figured out a way that looks nice yet.
+## HW5：UFO Sightings
+These two charts show the number of UFOs and the distribution of the top 15+ UFOs in each state across the U.S. from 1950 to 2023.
 
 
-## Search The Data & Methods
+---
+### UFO Sightings Map
 
-Below is where we can put some links to both the data and the analysis code as buttons:
+<iframe src="python_notebooks\ufo_sightings.html" width="100%" height="600" style="border:none;"></iframe>
 
-```
-<div class="left">
-{% include elements/button.html link="https://github.com/vega/vega/blob/main/docs/data/cars.json" text="The Data" %}
-</div>
+**Visualization Description:**
+This scatter plot maps UFO sightings across the United States, visualizing each reported sighting as a dot positioned by latitude and longitude. The map highlights patterns of sightings geographically, clearly illustrating higher densities in specific regions, notably along the coasts and populated areas.
 
-<div class="right">
-{% include elements/button.html link="https://blog.4dcu.be/programming/2021/05/03/Interactive-Visualizations.html" text="The Analysis" %}
-</div>
-```
+**Design Choices & Encoding:**
+Each UFO sighting is encoded with a distinct color representing its reported shape, using a categorical color scheme (category20) to differentiate numerous categories effectively. Spatial encoding clearly positions each sighting geographically, creating an intuitive visual understanding of distribution.
 
-<!-- these are written in a combo of html and liquid --> 
+**Data Transformations:**
+Data was filtered to include sightings only within valid U.S. locations, standardizing geographical coordinates and cleaning textual descriptions (such as UFO shapes) for consistency.
 
-<div class="left">
-{% include elements/button.html link="https://github.com/vega/vega/blob/main/docs/data/cars.json" text="The Data" %}
-</div>
 
-<div class="right">
-{% include elements/button.html link="https://github.com/jnaiman/online_cv_public/blob/main/python_notebooks/test_generate_plots.ipynb" text="The Analysis" %}
-</div>
+### UFO Shapes Distribution Bar Chart
 
+<iframe src="python_notebooks\ufo_sightings_distribution.html" width="100%" height="600" style="border:none;"></iframe>
+
+**Visualization Description:**
+This horizontal bar chart depicts the frequency of reported UFO shapes for a user-selected state (e.g., Oregon), clearly emphasizing the most commonly sighted shapes. It simplifies comparisons among shape categories and clearly identifies "Light" as the most frequent type of sighting.
+
+**Design Choices & Encoding:**
+The chart employs length encoding effectively, representing the number of sightings per shape. It uses distinct categorical colors consistently aligned with shapes to enhance visual differentiation, facilitating easy interpretation.
+
+**Data Transformations:**
+UFO shapes were grouped into the top 15 most common categories, with less common shapes aggregated into an "Other" category to enhance readability and simplify interpretation.
+
+**Interactivity:**
+The bar chart incorporates a dropdown selection allowing users to choose a specific state and dynamically update the shape distribution. This state-based filtering highlights regional differences clearly, making the visualization more interesting and enabling focused analysis tailored to the user's curiosity or specific investigative questions.
+
+- csv link（https://github.com/UIUC-iSchool-DataViz/is445_data/raw/main/ufo-scrubbed-geocoded-time-standardized-00.csv）
+- Github Notebook（https://github.com/EyesLikeStar/EyesLikeStar.github.io/blob/main/python_notebooks/HW5.ipynb）
