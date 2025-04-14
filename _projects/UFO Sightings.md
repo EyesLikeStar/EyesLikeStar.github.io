@@ -18,7 +18,7 @@ These two charts show the number of UFOs and the distribution of the top 15+ UFO
 ---
 ### UFO Sightings Map
 
-<vegachart schema-url="{{ site.baseurl }}/assets/json/ufo_sightings.json" style="width: 100%"></vegachart>
+<vegachart schema-url="{{ site.baseurl }}/assets/json/cars.json" style="width: 100%"></vegachart>
 
 **Visualization Description:**
 This scatter plot maps UFO sightings across the United States, visualizing each reported sighting as a dot positioned by latitude and longitude. The map highlights patterns of sightings geographically, clearly illustrating higher densities in specific regions, notably along the coasts and populated areas.
