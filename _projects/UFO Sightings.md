@@ -1,14 +1,13 @@
 ---
 name: Bigfoot Sightings Visualization
 tools: [Python, HTML, vega-lite, altair]
-image: python_notebooks/屏幕截图 2025-04-09 032819.png
+image: assets/pngs/Sightings.png
 description: These two charts show the number of UFOs and the distribution of the top 15+ UFOs in each state across the U.S. from 1950 to 2023.
 custom_js:
   - vega.min
   - vega-lite.min
   - vega-embed.min
   - justcharts
-permalink: /projects/HW5/index.html
 ---
 
 
@@ -47,5 +46,5 @@ UFO shapes were grouped into the top 15 most common categories, with less common
 **Interactivity:**
 The bar chart incorporates a dropdown selection allowing users to choose a specific state and dynamically update the shape distribution. This state-based filtering highlights regional differences clearly, making the visualization more interesting and enabling focused analysis tailored to the user's curiosity or specific investigative questions.
 
-- [csv link](https://github.com/UIUC-iSchool-DataViz/is445_data/raw/main/ufo-scrubbed-geocoded-time-standardized-00.csv)
+- [CSV link](https://github.com/UIUC-iSchool-DataViz/is445_data/raw/main/ufo-scrubbed-geocoded-time-standardized-00.csv)
 - [Github Notebook](https://github.com/EyesLikeStar/EyesLikeStar.github.io/blob/main/python_notebooks/HW5.ipynb)
